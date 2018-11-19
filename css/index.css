@@ -1,0 +1,77 @@
+/*Form login page styling*/
+.form-header {
+  text-align: center;
+}
+
+.form-header h5 {
+  font-style: italic;
+}
+
+form {
+  border-style: solid;
+  border-radius: 0.5em;
+  padding: 2em 12em;
+  margin: 2em;
+}
+
+#login {
+
+}
+
+.btn-primary {
+  margin-top: 0.5em;
+  text-align: center;
+}
+/*/Form login page styling*/
+
+/*Card Styling*/
+.card {
+  width: 5em;
+}
+
+/*Picture uploading page*/
+#pic-page {
+  text-align: center;
+}
+
+#pic-body {
+  border: solid 0.25em;
+  margin: 3em 0.5em 0em;
+  padding: 2.5em;
+}
+
+#upload-img-btn {
+  display: block;
+  text-align: center;
+  margin:0 auto;
+}
+
+#upload-img-browse {
+  text-align: center;
+}
+
+/*Player List*/
+
+
+/*Game Start*/
+#game-start h2{
+  text-align: center;
+}
+
+#game-start .card{
+  width: 20%;
+  display: inline-block;
+}
+
+/*Loading Image*/
+.loading-img {
+  margin:20% auto;
+}
+
+.loading h2 {
+  text-align: center;
+}
+
+
+.btn-file {
+}
