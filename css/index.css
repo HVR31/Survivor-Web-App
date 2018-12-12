@@ -25,9 +25,7 @@ form {
 /*/Form login page styling*/
 
 /*Card Styling*/
-.card {
-  width: 5em;
-}
+
 
 /*Picture uploading page*/
 #pic-page {
@@ -50,28 +48,89 @@ form {
   text-align: center;
 }
 
-/*Player List*/
+/*FontAwesomeIcon loading for round 1 start*/
+.loading-icon {
+  font-size: 4em;
+  color: #caccce;
+  /*necessary for horizontaly centering FontAwesomeIcon*/
+  display: inline-block;
+  width: 100%;
+  /*necessary for vertically centering FontAwesomeIcon*/
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  z-index: 2;
+  animation: 3s infinite rotate;
+}
 
+.finished-icon {
+  font-size: 4em;
+  color: #6eef72;
+  /*necessary for horizontaly centering FontAwesomeIcon*/
+  display: inline-block;
+  width: 100%;
+  /*necessary for vertically centering FontAwesomeIcon*/
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  z-index: 2;
+}
+
+/*will rotate FontAwesomeIcon*/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.player-progress {
+  background-color: #d8d8d8;
+}
 
 /*Game Start*/
 #game-start h2{
   text-align: center;
 }
 
-#game-start .card{
+.players-list .card{
   width: 20%;
   display: inline-block;
 }
 
 /*Loading Image*/
 .loading-img {
-  margin:20% auto;
+  margin: 10% auto;
 }
 
 .loading h2 {
   text-align: center;
 }
 
+/*Research Login Page*/
+#research-sec h2,p{
+  text-align: center;
+}
+
+/*Round 1 start page*/
+#round1-start {
+  font-size: 0.75em;
+  padding: 1em;
+}
+
+#round1-start-left h3{
+    margin-top: 0.5em;
+}
+
+#round1-start-left h3,p {
+  text-align: left;
+}
+
+#round1-start-left .visible {
+  background-color: #d9e6fc;
+}
 
 .btn-file {
 }

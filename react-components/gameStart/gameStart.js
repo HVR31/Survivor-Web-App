@@ -1,5 +1,5 @@
 import React from 'react';
-import PlayerList from './playersList.js';
+import PlayerList from '../playerList/playersList.js';
 import LoadingPage from '../loading/loadingPage.js';
 
 export class GameStart extends React.Component {

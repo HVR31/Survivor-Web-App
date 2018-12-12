@@ -1,16 +1,19 @@
 import React from 'react';
 
-const Card =(props) => {
+const Card = (props) => {
   const cardImg = props.cardImg;
   const cardTitle = props.cardTitle;
   const cardText = props.cardText;
   const cardAlt = props.cardAlt;
+  const extra = props.extra;
+  const children = props.children;
 
   return(
-    <div className="card">
+    <div className={"card " + extra} >
       <img className="card-img-top img-responsive" height="200" src={cardImg} alt={cardAlt}/>
+      {children}
       <div className="card-body">
-        <h5 className="card-title">{cardTitle}</h5>
+        <p className="card-title">{cardTitle}</p>
         <p className="card-text">{cardText}</p>
       </div>
     </div>

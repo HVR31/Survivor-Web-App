@@ -4,12 +4,15 @@ import {userPhoto} from '../form/picGroup.js';
 
 const PlayerList = (props) => {
   const defaultPic = '../../assets/default.jpg';
+  const playerClass = props.playerClass;
+
   const playerList = {
     user: {
       name:'user',
       age:'22',
       img: defaultPic,
-      id: 0
+      id: 0,
+      extraClass: playerClass
     },
     player1: {
       name:'Daniella',
@@ -45,7 +48,6 @@ const PlayerList = (props) => {
   //Iterates through each property in Player List object, inserts them into Cards
   //then stores into cardSection array
   for (const values of playerValues) {
-    console.log(values);
     cardSection.push(<Card key={values.id} cardImg={values.img} cardTitle={values.name} cardText={values.age}/>);
   }
 

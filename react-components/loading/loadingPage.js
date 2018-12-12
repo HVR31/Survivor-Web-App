@@ -7,7 +7,7 @@ const LoadingPage = (props) => {
 
   return(
     <div className="loading">
-      <ReactLoading className="loading-img" type="spinningBubbles" delay={props.delay} color="#000" width='15%'>
+      <ReactLoading className="loading-img" type="spinningBubbles" delay={props.delay} color="#000" width='10%'>
       </ReactLoading>
       <h2>{text}</h2>
     </div>
